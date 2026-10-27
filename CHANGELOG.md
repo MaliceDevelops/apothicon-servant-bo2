@@ -1,5 +1,12 @@
 # Changelog
 
+## 4.1.1
+
+Installer fixes. The gun itself is unchanged.
+
+- Install.bat now recognises a copy you installed by hand (following the README's "install by hand" steps). It updates that copy and keeps your settings, instead of setting its file aside as another mod's. If you have Zombies Declassified, it also removes a hand-made separate "Apothicon Servant" mod, so the Mods menu has no second entry.
+- Uninstall.bat also removes a copy installed by hand.
+
 ## 4.1
 
 The black hole now catches zombies the way Black Ops 3's does:
