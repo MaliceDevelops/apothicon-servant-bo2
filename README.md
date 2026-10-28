@@ -75,6 +75,6 @@ See [CHANGELOG.md](CHANGELOG.md).
 
 ## Credits
 
-Ported by **MaliceKy**. Built with [OpenAssetTools](https://github.com/Laupetin/OpenAssetTools) and [Plutonium](https://plutonium.pw).
+Ported by **MaliceDevelops**. Built with [OpenAssetTools](https://github.com/Laupetin/OpenAssetTools) and [Plutonium](https://plutonium.pw).
 
 The Apothicon Servant's model, animations, sounds and effects are © Activision / Treyarch, from Call of Duty: Black Ops III. This is a free fan mod, not affiliated with or endorsed by Activision. Don't sell it.
