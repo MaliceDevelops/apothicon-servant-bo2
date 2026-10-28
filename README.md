@@ -40,15 +40,23 @@ Open `scripts\zm\zzz_aps_config.gsc` with Notepad. Install.bat shows where it is
 
 - turn the gun off on chosen maps,
 - turn Pack-a-Punch off,
-- turn off the Pack-a-Punch camo.
+- turn off the Pack-a-Punch camo,
+- let the creature say its combat and idle lines too (`creature_chatter`). It's off by default: in BO3 the creature only greets you when you get the gun.
 
 Save, then start a new game.
+
+Updating from 4.1.1 or older keeps your old settings file, which has no `creature_chatter` line. To turn it on, add this line under the `pack_a_punch_camo` line:
+
+```
+level.aps_config[ "creature_chatter" ] = 1;
+```
 
 ## Good to know
 
 - **Co-op:** everyone in the game needs the mod installed.
 - **Other mods:** script mods like B2OP work fine alongside it.
 - **One fastfile mod in ZD:** Zombies Declassified only has room for **one** mod with its own fastfile (`mods\dlc5\mod_patch.ff`). If you already have one, the installer sets it aside, and Uninstall.bat puts it back. Only one of the two works at a time.
+- **With the [Upgraded Cymbal Monkey](https://github.com/MaliceDevelops/upgraded-cymbal-monkey-bo2):** it needs that slot too, so the two can't both be in Zombies Declassified. If the monkey mod is already there, Install.bat offers to install the Apothicon Servant as its own mod instead (Mods menu, normal BO2 maps).
 - **Installed another fastfile mod later:** maps can fail to load. Run this mod's Uninstall.bat, or its Install.bat to switch back to it.
 - **After a Zombies Declassified update or install:** if the gun is missing from the box, run Install.bat again.
 

@@ -1,5 +1,20 @@
 # Changelog
 
+## 4.2
+
+Sounds remixed to match Black Ops 3, BO3's crosshair, and a quieter creature.
+
+- **Sounds match BO3.** Every sound's volume and range now come from BO3's own sound data. Before, the black hole could barely be heard more than a few steps away. Now you hear it open, hum and collapse from across the room, and it gets louder as you get closer.
+- **BO3's extra sound layers:** the bass hit under the black hole opening and under its explosion, and the explosion's extra crack.
+- **Louder:** the creature's greeting, its reload, and zombies being pulled in and crushed.
+- **Quieter:** the creature's wet idle noise while you hold the gun.
+- **Crosshair:** BO3's own Apothicon Servant crosshair, with the square in the middle.
+- **The creature talks like in BO3:** it greets you when you get the gun, and that's all. Its combat and idle lines are in BO3's files, but BO3 never plays them. To hear them anyway, turn on the new `creature_chatter` setting (see the README's Settings).
+- **Installer:** if the [Upgraded Cymbal Monkey](https://github.com/MaliceDevelops/upgraded-cymbal-monkey-bo2) is already in Zombies Declassified, Install.bat says so and offers to install the Apothicon Servant as its own mod instead. It no longer sets the other mod's file aside, which would have left its scripts behind and stopped maps from loading.
+- The download now unzips correctly on Linux and Steam Deck (folders used to show up as long file names).
+
+Updating keeps your settings file as it was, so it has no `creature_chatter` line. The README's Settings section shows the line to add.
+
 ## 4.1.1
 
 Installer fixes. The gun itself is unchanged.
