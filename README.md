@@ -22,6 +22,15 @@ Under **Assets**, download `Apothicon_Servant_v<version>.zip`.
    - **With Zombies Declassified:** launch it like always. The gun is in the box on its maps and on the normal BO2 maps.
    - **Without it:** start Zombies, open **Mods**, pick **Apothicon Servant**, then play any map.
 
+### Merge with the Upgraded Cymbal Monkey
+
+Have the [Upgraded Cymbal Monkey](https://github.com/MaliceDevelops/upgraded-cymbal-monkey-bo2) installed too? Install.bat asks what you want:
+
+1. **Merge them** (just press Enter): both work in the same game. With Zombies Declassified, both go into it. Without it, they become one mod in the Mods menu: **Apothicon Servant + Upgraded Cymbal Monkey**.
+2. **Keep them apart:** each stays its own mod. Without Zombies Declassified, you pick one or the other in the Mods menu.
+
+The download carries the Upgraded Cymbal Monkey too, so merging also brings it up to that version, and its settings are kept. Uninstalling one of a merged pair leaves the other working.
+
 Install.bat needs Windows 10 or 11. To install by hand instead, follow `README.txt` in the download.
 
 Windows may warn about running a downloaded `.bat`. Install.bat only copies the mod's files; you can read `installer\install.ps1` to check.
@@ -36,7 +45,7 @@ Close BO2 and double-click **Uninstall.bat**. It removes exactly what Install.ba
 
 ## Settings
 
-Open `scripts\zm\zzz_aps_config.gsc` with Notepad. Install.bat shows where it is. You can:
+Open `scripts\zm\zzz_aps_config.gsc` with Notepad. Install.bat shows where it is (it moves along when the gun moves into Zombies Declassified or gets merged). You can:
 
 - turn the gun off on chosen maps,
 - turn Pack-a-Punch off,
@@ -56,7 +65,7 @@ level.aps_config[ "creature_chatter" ] = 1;
 - **Co-op:** everyone in the game needs the mod installed.
 - **Other mods:** script mods like B2OP work fine alongside it.
 - **One fastfile mod in ZD:** Zombies Declassified only has room for **one** mod with its own fastfile (`mods\dlc5\mod_patch.ff`). If you already have one, the installer sets it aside, and Uninstall.bat puts it back. Only one of the two works at a time.
-- **With the [Upgraded Cymbal Monkey](https://github.com/MaliceDevelops/upgraded-cymbal-monkey-bo2):** it needs that slot too, so the two can't both be in Zombies Declassified. If the monkey mod is already there, Install.bat offers to install the Apothicon Servant as its own mod instead (Mods menu, normal BO2 maps).
+- **The Upgraded Cymbal Monkey** needs that slot too. Merged (see above), both fit.
 - **Installed another fastfile mod later:** maps can fail to load. Run this mod's Uninstall.bat, or its Install.bat to switch back to it.
 - **After a Zombies Declassified update or install:** if the gun is missing from the box, run Install.bat again.
 
