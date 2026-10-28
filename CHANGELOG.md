@@ -10,7 +10,7 @@ Sounds remixed to match Black Ops 3, BO3's crosshair, and a quieter creature.
 - **Quieter:** the creature's wet idle noise while you hold the gun.
 - **Crosshair:** BO3's own Apothicon Servant crosshair, with the square in the middle.
 - **The creature talks like in BO3:** it greets you when you get the gun, and that's all. Its combat and idle lines are in BO3's files, but BO3 never plays them. To hear them anyway, turn on the new `creature_chatter` setting (see the README's Settings).
-- **Merge with the [Upgraded Cymbal Monkey](https://github.com/MaliceDevelops/upgraded-cymbal-monkey-bo2):** if you have both, Install.bat offers to merge them so both work in the same game: in Zombies Declassified, or without it as one mod in the Mods menu. Or keep them apart. The download carries the monkey mod too, so this works whichever one you install second.
+- **New installer:** Install.bat opens a window with a tick box for each of my mods (the Apothicon Servant and the [Upgraded Cymbal Monkey](https://github.com/MaliceDevelops/upgraded-cymbal-monkey-bo2) so far). Only the ticked ones are downloaded, each from its own GitHub page, and they all work together in the same game, with or without Zombies Declassified. With Zombies Declassified they leave its second fastfile slot free for someone else's mod. Run it again to add, remove or update mods. It takes over an install from an earlier version (by Install.bat or by hand) and keeps your settings. It needs an internet connection.
 - The download now unzips correctly on Linux and Steam Deck (folders used to show up as long file names).
 
 Updating keeps your settings file as it was, so it has no `creature_chatter` line. The README's Settings section shows the line to add.
