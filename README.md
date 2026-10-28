@@ -20,9 +20,10 @@ Under **Assets**, download `Apothicon_Servant_v<version>.zip`.
 2. Unzip the download anywhere and double-click **Install.bat**.
 3. A window lists all of my mods, each with a tick box, with the Apothicon Servant already ticked. Tick any others you want (like the [Upgraded Cymbal Monkey](https://github.com/MaliceDevelops/upgraded-cymbal-monkey-bo2)). Only the ticked mods are downloaded, each from its own GitHub page, and they all work together in the same game.
 4. Choose where they go, press **Install** and play:
-   - **Into Zombies Declassified:** launch it like always. The mods work on its maps and on the normal BO2 maps.
-   - **Into a copy of Zombies Declassified:** your own Zombies Declassified stays exactly as it is. Open **Mods** and pick **Zombies Declassified + MaliceDevelops Mods**.
+   - **Into Zombies Declassified:** launch it like always. The mods work on its maps and on the normal BO2 maps. To play Zombies Declassified without them, press **Turn off** in the installer (**Turn on** puts them back).
    - **As a mod of their own** (the only choice without Zombies Declassified): open **Mods**, pick **MaliceDevelops Mods**, then play any map.
+
+The installer stays on your PC: a **MaliceDevelops BO2 Mods** shortcut on your desktop and in the Start menu opens it again, so you don't need to keep the zip.
 
 Install.bat needs Windows 10 or 11 and an internet connection. To install by hand instead, follow `README.txt` in the download.
 
@@ -30,22 +31,22 @@ Windows may warn about running a downloaded `.bat`. Install.bat only downloads m
 
 ## Add, remove or update mods
 
-Run **Install.bat** again: tick a mod to add it, untick it (or press its **Uninstall** button) to remove it. It always installs the newest versions, keeps your settings, and doesn't download again what's already up to date. Updating from an older version of the Apothicon Servant works the same way: the new Install.bat takes the old install over.
+Open the **MaliceDevelops BO2 Mods** shortcut (or run Install.bat again): tick a mod to add it, untick it (or press its **Uninstall** button) to remove it. It always installs the newest versions, keeps your settings, and doesn't download again what's already up to date. If a mod acts broken, press **Repair**: it downloads again only what's missing or damaged. Updating from an older version of the Apothicon Servant works the same way: the new Install.bat takes the old install over.
 
 ## Uninstall
 
-Close BO2 and double-click **Uninstall.bat**, or press **Uninstall all** in the Install.bat window. It removes all of my mods and puts back anything it set aside.
+Close BO2 and press **Uninstall all** in the installer (or double-click **Uninstall.bat**). It removes all of my mods, the shortcuts and the installer kept on your PC, and puts back anything it set aside.
 
 ## Settings
 
-Run **Install.bat** and press the Apothicon Servant's **Settings** button (or open `scripts\zm\zzz_aps_config.gsc` with Notepad). You can:
+Open the installer (the **MaliceDevelops BO2 Mods** shortcut) and press the Apothicon Servant's **Settings** button (or open `scripts\zm\zzz_aps_config.gsc` with Notepad). You can:
 
 - turn the gun off on chosen maps,
 - turn Pack-a-Punch off,
 - turn off the Pack-a-Punch camo,
 - let the creature say its combat and idle lines too (`creature_chatter`). It's off by default: in BO3 the creature only greets you when you get the gun.
 
-Save, then start a new game. Your settings are kept when you update.
+Save, then start a new game. **Reset to defaults** puts back the mod's own settings. Your settings are kept when you update.
 
 Updating from 4.1.1 or older keeps your old settings file, which has no `creature_chatter` line. To turn it on, add this line under the `pack_a_punch_camo` line:
 
@@ -58,7 +59,7 @@ level.aps_config[ "creature_chatter" ] = 1;
 - **Co-op:** everyone in the game needs the same mods ticked.
 - **Other mods:** script mods like B2OP work fine alongside. Zombies Declassified has two free slots for mods that bring their own fastfile, and all of my mods together use one, so another fastfile mod can use the other.
 - **Only what you tick:** a mod you don't tick isn't downloaded or installed. All my mods share one small file (a few MB); each mod's textures, scripts and sounds are separate.
-- **After a Zombies Declassified update or install:** if the gun disappears from the box, run Install.bat again.
+- **After a Zombies Declassified update or install:** if the gun disappears from the box, open the installer and press **Repair**.
 
 ## Bugs
 
